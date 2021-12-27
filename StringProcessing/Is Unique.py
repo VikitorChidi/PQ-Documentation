@@ -1,5 +1,4 @@
 # Your task is to implement an algorithm to determine if a string has all unique characters.
-
 # def is_unique(input_str):
 #     a = len(set(input_str))
 #     b = len(input_str)

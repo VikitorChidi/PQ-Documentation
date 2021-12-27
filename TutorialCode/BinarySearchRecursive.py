@@ -22,7 +22,7 @@ def bsr(numList, numTF, lft_index, rgt_index):
 
 if __name__ == '__main__':
     numList = [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 32]
-    numTF = 17
+    numTF = 21
 
     value = bsr(numList, numTF, 0, len(numList))
     print(value)

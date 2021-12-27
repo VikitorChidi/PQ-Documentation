@@ -16,8 +16,7 @@
 # CODE
 
 def is_palin_perm(input_str):
-    input_str = input_str.replace(" ", "")
-    input_str = input_str.lower()
+    input_str = input_str.lower().replace(" ", "")
 
     d = dict()
 
@@ -37,10 +36,10 @@ def is_palin_perm(input_str):
 
 
 palin_perm = "Tact Coa"
-not_palin_perm = "This is not a palindrome permutation"
+# not_palin_perm = "This is not a palindrome permutation"
 
 print(is_palin_perm(palin_perm))
-print(is_palin_perm(not_palin_perm))
+# print(is_palin_perm(not_palin_perm))
 
 
 # Explanation

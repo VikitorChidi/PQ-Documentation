@@ -14,7 +14,8 @@ def is_palindrome(s):
 
         if s[i].lower() != s[j].lower():
             return False 
-        i += 1
+        # repeat the process until the list is exhausted.
+        i += 1 
         j -= 1
     return True
 

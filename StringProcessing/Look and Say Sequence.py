@@ -1,4 +1,4 @@
-# 11221 is read of as "Three 1s, two 2s, then one 1"
+# 111221 is read of as "Three 1s, two 2s, then one 1"
 # which is 312211
 
 def next_number(s):
@@ -10,11 +10,11 @@ def next_number(s):
             i += 1
             count += 1
         result.append(str(count) + s[i])
-        i += 1
+        i += 1 # repeat the process 
     return ''.join(result)
 
 
-s = "1"
+s = "111221"
 print(s)
 n = 4
 for i in range(n-1):
