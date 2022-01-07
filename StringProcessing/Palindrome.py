@@ -1,24 +1,22 @@
 # A palindrome is a word, number, phrase, or any other sequence of characters that reads the same forward as it does backward.
 # Example: Was it a cat I saw
 
-
-def is_palindrome(s):
-    i = 0
-    j = len(s) - 1
-
-    while i < j:
-        while not s[i].isalnum() and i < j:
-            i += 1
-        while not s[j].isalnum() and i < j:
-            j -= 1
-
-        if s[i].lower() != s[j].lower():
-            return False 
-        # repeat the process until the list is exhausted.
-        i += 1 
-        j -= 1
+def isPalindrome(self, s: str) -> bool:
+    l, r = 0, len(s) - 1
+    while l < r:
+        while l < r and not self.alphaNum(s[l]):
+            l += 1
+        while r > l and not self.alphaNum(s[r]):
+            r -= 1
+        if s[l].lower() != s[r].lower():
+            return False
+        l += 1
+        r -= 1
     return True
 
-s = "Was it a cat I saw?"
-# s = "Victor"
-print(is_palindrome(s))
+
+def alphaNum(self, c):
+    return (ord('A') <= ord(c) <= ord('Z') or
+            ord('a') <= ord(c) <= ord('z') or
+            ord('0') <= ord(c) <= ord('9')
+            )
